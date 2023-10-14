@@ -13,8 +13,14 @@ body {
   /* Fonts number 2 */
   /* font-family: 'Montserrat', sans-serif; */
 }
-header {
-  height: calc(87vh - 3rem);
+/* Root Style And Class */
+section {
+  margin: 0 2rem;
+}
+@media screen and (min-width: 1200px) {
+  header {
+    height: calc(87vh - 3rem);
+  }
 }
 a {
   text-decoration: none;
@@ -44,6 +50,8 @@ li {
 .curser-pointer {
   cursor: pointer;
 }
+/* end */
+
 /* Navbar style */
 .navbarAside {
   position: absolute;
@@ -66,3 +74,30 @@ li {
 .bi-x {
   font-size: 2.5rem;
 }
+/* end */
+
+/* About Section */
+.About {
+  margin-top: 5rem;
+}
+.About-img-container {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.About-img {
+  border-radius: 50%;
+}
+.progress-bar {
+  width: 65%;
+}
+.Skills-2 .progress-bar {
+  width: 95%;
+}
+@media screen and (min-width: 992px) {
+  .About-me,
+  .Contact {
+    width: 50%;
+  }
+}
+/* end */
