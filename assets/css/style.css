@@ -13,6 +13,9 @@ body {
   /* Fonts number 2 */
   /* font-family: 'Montserrat', sans-serif; */
 }
+header {
+  height: calc(87vh - 3rem);
+}
 a {
   text-decoration: none;
 }
@@ -21,6 +24,9 @@ li {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+}
+.text-primary {
+  color: #0dcaf0 !important;
 }
 .links-defult {
   color: rgb(123, 123, 123);
@@ -52,7 +58,6 @@ li {
   transform: translate(-200%);
 }
 .show-navAside {
-  display: block;
   transform: translate(0%);
 }
 .navbarAside-items:hover {
