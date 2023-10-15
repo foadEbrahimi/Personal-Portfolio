@@ -15,7 +15,7 @@ body {
 }
 /* Root Style And Class */
 section {
-  margin: 0 2rem;
+  margin: 5rem 2rem;
 }
 @media screen and (min-width: 1200px) {
   header {
@@ -77,9 +77,6 @@ li {
 /* end */
 
 /* About Section */
-.About {
-  margin-top: 5rem;
-}
 .About-img-container {
   width: 15rem;
   height: 15rem;
@@ -98,6 +95,31 @@ li {
   .About-me,
   .Contact {
     width: 50%;
+  }
+}
+/* end */
+
+/* Services */
+.cards {
+  column-gap: 0.4rem;
+}
+.card-view {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  transition: var(--transition);
+}
+.card-view:hover {
+  transform: rotate(2deg);
+}
+@media screen and (min-width: 768px) {
+  .card-view {
+    max-width: 23rem;
+  }
+}
+@media screen and (min-width: 1515px) {
+  .cards {
+    gap: 1rem 2.4rem !important;
   }
 }
 /* end */
