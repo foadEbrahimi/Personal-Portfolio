@@ -166,3 +166,22 @@ li {
   max-width: 50rem;
 }
 /* end */
+
+/* Footer */
+footer {
+  background-color: #202020;
+}
+.Social-icon {
+  padding: 0.75rem;
+  border-radius: 50%;
+  color: lightgray;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.Social-icon:hover {
+  background-color: #0dcaf0;
+  color: white;
+  border: transparent;
+}
+/* end */
