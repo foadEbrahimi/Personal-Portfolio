@@ -47,12 +47,20 @@ li {
 .active-links {
   color: #0dcaf0;
 }
+.active-links-primary {
+  color: #0d46f0;
+}
 .curser-pointer {
   cursor: pointer;
 }
 /* end */
 
 /* Navbar style */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 .navbarAside {
   position: absolute;
   top: 30%;
@@ -139,11 +147,6 @@ li {
     justify-content: start;
   }
 }
-/* @media screen and (min-width: 1515px) {
-  .Projects {
-    column-gap: 3rem;
-  }
-} */
 .project-img-container {
   width: 20rem;
 }
@@ -218,5 +221,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: e-resize;
 }
 /* end */

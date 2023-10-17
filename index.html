@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link
       rel="stylesheet"
@@ -20,43 +22,46 @@
   </head>
   <body>
     <nav
-      class="navbar position-relative d-flex justify-content-between align-items-center p-4 px-lg-5 bg-light"
+      class="navbar d-flex justify-content-between align-items-center p-4 px-lg-5 bg-light"
     >
-      <div class="navbarAside d-flex flex-column rounded">
+      <div class="navbarAside d-flex d-md-none flex-column rounded">
         <i class="bi bi-x align-self-end curser-pointer"></i>
         <ul class="navbarAside-list text-uppercase">
           <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
+            <a href="#Home" class="navbarAside-links navbar-link links-defult">
               <i class="bi bi-house pe-1"></i>
               home
             </a>
           </li>
           <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
+            <a href="#About" class="navbarAside-links navbar-link links-defult">
               <i class="bi bi-file-earmark-person pe-1"></i>
               About
             </a>
           </li>
           <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
+            <a
+              href="#Services"
+              class="navbarAside-links navbar-link links-defult"
+            >
               <i class="bi bi-cast pe-1"></i>
               Services
             </a>
           </li>
           <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
+            <a
+              href="#Projects"
+              class="navbarAside-links navbar-link links-defult"
+            >
               <i class="fa-regular fa-id-card pe-1"></i>
               Protfilo
             </a>
           </li>
           <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
-              <i class="bi bi-person-workspace pe-1"></i>
-              Work samples
-            </a>
-          </li>
-          <li class="navbarAside-items mt-3 px-3 py-1">
-            <a href="#" class="navbarAside-links links-defult">
+            <a
+              href="#Contact"
+              class="navbarAside-links navbar-link links-defult"
+            >
               <i class="fa-solid fa-phone-volume fa-shake pe-1"></i>
               Contact
             </a>
@@ -72,29 +77,31 @@
       <div class="navbar-link d-none d-md-block">
         <ul class="navbar-list d-flex gap-4 gap-lg-5 mb-0 text-uppercase">
           <li class="navbar-items">
-            <a href="#" class="navbar-links active-links">Home</a>
+            <a href="#Home" class="navbar-links active-links">Home</a>
           </li>
           <li class="navbar-items">
-            <a href="#" class="navbar-links links-defult">About</a>
+            <a href="#About" class="navbar-links links-defult">About</a>
           </li>
           <li class="navbar-items">
-            <a href="#" class="navbar-links links-defult">Services</a>
+            <a href="#Services" class="navbar-links links-defult">Services</a>
           </li>
           <li class="navbar-items">
-            <a href="#" class="navbar-links links-defult">Protfilo</a>
+            <a href="#Projects" class="navbar-links links-defult">Protfilo</a>
           </li>
           <li class="navbar-items">
-            <a href="#" class="navbar-links links-defult">Testimonials</a>
+            <a href="#Testimonials" class="navbar-links links-defult"
+              >Testimonials</a
+            >
           </li>
           <li class="navbar-items">
-            <a href="#" class="navbar-links links-defult">Contact</a>
+            <a href="#Contact" class="navbar-links links-defult">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <main class="container">
       <!-- Hero -->
-      <header class="container mt-3 d-lg-flex align-items-center">
+      <header class="container mt-3 d-lg-flex align-items-center" id="Home">
         <div class="contect">
           <h3 class="text-primary">Hello i'am</h3>
           <h1>YourName</h1>
@@ -127,7 +134,7 @@
         </div>
       </header>
       <!-- About -->
-      <section class="About d-lg-flex align-items-center">
+      <section class="About d-lg-flex align-items-center" id="About">
         <div class="About-me">
           <div class="About-img-container m-auto">
             <img
@@ -184,7 +191,7 @@
       </section>
     </main>
     <!-- Services -->
-    <div class="Services bg-light p-3">
+    <div class="Services bg-light p-3" id="Services">
       <div class="contect text-center">
         <h5>WHAT WE OFFER</h5>
         <h2 class="fw-bold">Affordable Services</h2>
@@ -260,7 +267,7 @@
       </div>
     </div>
     <!-- Peroject -->
-    <section class="Project">
+    <section class="Project" id="Projects">
       <div class="contect text-center">
         <h3 class="fw-bold">My Latest Project</h3>
         <p>
@@ -362,7 +369,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section class="Testimonials container">
+    <section class="Testimonials container" id="Testimonials">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -456,6 +463,7 @@
     <!-- Contact Section -->
     <section
       class="container d-lg-flex justify-content mt-4-between align-items-center gap-3"
+      id="Contact"
     >
       <div class="contact-form">
         <h3 class="fw-bold">Hire Me</h3>
@@ -519,7 +527,11 @@
       </div>
     </footer>
   </body>
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
   <script
     src="https://kit.fontawesome.com/435748e60c.js"
     crossorigin="anonymous"
