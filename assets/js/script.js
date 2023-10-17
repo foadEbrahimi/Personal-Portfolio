@@ -11,3 +11,10 @@ const hideNavside = function () {
 // Actice Functions
 toggleBtn.addEventListener('click', showNavside);
 closeBtn.addEventListener('click', hideNavside);
+
+var swiper = new Swiper('.mySwiper', {
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  effect: 'cards',
+});

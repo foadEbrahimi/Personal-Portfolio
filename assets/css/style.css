@@ -185,3 +185,38 @@ footer {
   border: transparent;
 }
 /* end */
+
+/* Testimonials */
+.Testimonials {
+  padding: 1rem;
+  height: 30rem;
+}
+.Testimonials-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+.text-Testimonials {
+  max-width: 40rem;
+}
+.name-Testimonials p {
+  letter-spacing: 0.5rem;
+}
+.border-Testimonials {
+  border-bottom: 2px solid black;
+  margin-top: 2rem;
+}
+.swiper {
+  width: 70%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* end */
